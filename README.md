@@ -1,6 +1,6 @@
 # UniGather
 
-![alt text](https://github.com/[RGU-Computing]/[UniGather]/blob/[main]/Loading depedencies into the OSINT tool code.jpg?raw=true)
+![alt text](https://github.com/[RGU-Computing]/[UniGather]/blob/main/images/loading_dependencies.jpg?raw=true)
 
 The tool GUI interface build up brief:
 
