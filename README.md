@@ -1,7 +1,19 @@
 # UniGather
 
+### Created by Virendra Pathronia, MSc
+Open-source intelligence (OSINT) is a term to describe the collecting and analyzing of freely available and publicly disseminated information to derive actionable tasks. As a result of faster and more convenient access to the Internet, OSINT is impacting every sector by allowing organizations to leverage the vast quantity of produced personal information individuals and businesses store online. Of specific interest is the manner in which OSINT impacts the cyber security domain by fundamentally changing the way organizations are dealing with cyber-threats. Bad actors are always on the lookout for vulnerabilities and devise newer ways to make them realized threats. It is therefore crucial to identify publicly available information to uncover potential threats before bad actors can use this information to structure their attacks. To this end, we introduce the UniGather OSINT framework, a modular Python-based tool which co-ordinates bespoke and existing tools to create a vulnerability report for a given domain.
+
+## Tool Functionality
+
+
+## Setup
+The tool is generally plug-n-play. However there are two setup steps required. Paths to dependencies must be stated at the following location:
 ![alt text](https://github.com/RGU-Computing/UniGather/blob/main/images/load_dependencies.jpg?raw=true)
 
+Additionally, the email breach detection module is reliant on hunter.io. Therefore an account is required. To use this module, please create an account and enter the relevant details at the following location.
+![alt text](https://github.com/RGU-Computing/UniGather/blob/main/images/user_and_pswd_for_email_breach.jpg?raw=true)
+
+## Development Steps
 The tool GUI interface build up brief:
 
 The tool GUI interface has been generated using tkinter library which helps in generating a tool window. It provides us with options to create labels, text entry boxes, check-boxes and much more (there is no end for creativity) It is also possible to attach jpg/png files to the tool using PIL library.There are many other toos/packages for building GUI in python like PyQt5, WxPython and Kivy however we have used tKinter owing to its simplicity in usage and because the focus was more on attaching the data fetching code to be attached easily for execution and displaying output.However this does not mean other tools are complex, its just that we have used tKinter.
