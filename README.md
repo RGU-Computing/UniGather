@@ -4,14 +4,15 @@
 Open-source intelligence (OSINT) is a term to describe the collecting and analyzing of freely available and publicly disseminated information to derive actionable tasks. As a result of faster and more convenient access to the Internet, OSINT is impacting every sector by allowing organizations to leverage the vast quantity of produced personal information individuals and businesses store online. Of specific interest is the manner in which OSINT impacts the cyber security domain by fundamentally changing the way organizations are dealing with cyber-threats. Bad actors are always on the lookout for vulnerabilities and devise newer ways to make them realized threats. It is therefore crucial to identify publicly available information to uncover potential threats before bad actors can use this information to structure their attacks. To this end, we introduce the UniGather OSINT framework, a modular Python-based tool which co-ordinates bespoke and existing tools to create a vulnerability report for a given domain.
 
 ## Tool Functionality
-
+The tool is coded in Python, bringing together a series of packages for web scraping and OSINT. We demonstrate the workflow of the tool below. Currently, up to five  identifiers are supported to extract data (domain registration, web technologies, subdomain and open port recognition, email address breach detection, confidentional document recognition). By default, UniGather is modular in nature by providing flexibility to extract data for only selected modules (based on user input via the interface). As output, UniGather generates a spreadsheet of extracted details. During its first search for a particular domain the xlsx files is created (and updated by subsequent searches). For example a search for domain registration details for facebook.com generates \textit{facebook.com.xlsx}. Any further searches for facebook.com will update the existing file with a new sheet (i.e. \textit{Web Technologies} in the existing file without deleting any previously captured details). Please note that while the above use-case solution is cyber security focused, we have designed the tool to be modular and extensible to extract data with any other identifiers as per the requirement of the business.
+![UniGather Functionality Image](https://github.com/RGU-Computing/UniGather/blob/main/images/unigather_funct_graph.PNG?raw=true)
 
 ## Setup
 The tool is generally plug-n-play. However there are two setup steps required. Paths to dependencies must be stated at the following location:
-![alt text](https://github.com/RGU-Computing/UniGather/blob/main/images/load_dependencies.jpg?raw=true)
+![Load Dependencies](https://github.com/RGU-Computing/UniGather/blob/main/images/load_dependencies.jpg?raw=true)
 
 Additionally, the email breach detection module is reliant on hunter.io. Therefore an account is required. To use this module, please create an account and enter the relevant details at the following location.
-![alt text](https://github.com/RGU-Computing/UniGather/blob/main/images/user_and_pswd_for_email_breach.jpg?raw=true)
+![Enter account details for hunter.io](https://github.com/RGU-Computing/UniGather/blob/main/images/user_and_pswd_for_email_breach.jpg?raw=true)
 
 ## Development Steps
 The tool GUI interface build up brief:
