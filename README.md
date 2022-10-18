@@ -1,5 +1,7 @@
 # UniGather
 
+![alt text](https://github.com/[RGU-Computing]/[UniGather]/blob/[main]/Loading depedencies into the OSINT tool code.jpg?raw=true)
+
 The tool GUI interface build up brief:
 
 The tool GUI interface has been generated using tkinter library which helps in generating a tool window. It provides us with options to create labels, text entry boxes, check-boxes and much more (there is no end for creativity) It is also possible to attach jpg/png files to the tool using PIL library.There are many other toos/packages for building GUI in python like PyQt5, WxPython and Kivy however we have used tKinter owing to its simplicity in usage and because the focus was more on attaching the data fetching code to be attached easily for execution and displaying output.However this does not mean other tools are complex, its just that we have used tKinter.
